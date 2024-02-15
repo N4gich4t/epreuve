@@ -34,4 +34,10 @@ var countdown = setInterval(function() {
 // Gestion de l'événement de clic sur le bouton
 document.getElementById("bottle").addEventListener("click", function() {
     redirectToAnotherPage();
+
+    window.addEventListener('load', function() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    });
+
 });
