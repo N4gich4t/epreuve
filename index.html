@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte à rebours</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="test">L'Epreuve Commencera dans : </h1>
+</header>
+
+<video id="background-video" autoplay loop muted>
+
+    <source src="img/portail.mp4" type="video/mp4">
+</video>
+
+<div id="countdown" class="countdown-container">
+    <div class="countdown-item">
+        <span class="countdown-number" id="days"></span><br>
+        <span class="countdown-label">Days</span>
+    </div>
+    <div class="countdown-item">
+        <span class="countdown-number" id="hours"></span><br>
+        <span class="countdown-label">Hours</span>
+    </div>
+    <div class="countdown-item">
+        <span class="countdown-number" id="minutes"></span><br>
+        <span class="countdown-label">Minutes</span>
+    </div>
+    <div class="countdown-item">
+        <span class="countdown-number" id="seconds"></span><br>
+        <span class="countdown-label">Seconds</span>
+    </div>
+</div>
+<button id="bottle" class="large-font" style="display:none;">Débutons</button>
+
+<script src="script.js"></script>
+</body>
+</html>
