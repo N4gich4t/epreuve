@@ -17,7 +17,6 @@
     <source src="img/portail.mp4" type="video/mp4">
 </video>
 
-<button id="start-audio">Démarrer la musique</button>
 
 <audio id="background-music">
     <source src="audio/music_fond.mp3" type="audio/mp3">
@@ -25,16 +24,25 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var audio = document.getElementById('background-music');
-        var button = document.getElementById('start-audio');
+        var music = document.getElementById('background-music');
+        var video = document.getElementById('background-video');
 
-        // Ajout d'un écouteur d'événement sur le bouton pour démarrer l'audio
-        button.addEventListener('click', function() {
-            // Vérifiez d'abord si la musique n'est pas déjà en train de jouer
-            if (audio.paused) {
-                audio.play();
+        // Déclenche la lecture de la musique dès que la page est chargée
+        music.play();
+
+        // Ajoute un écouteur d'événement pour déclencher la lecture de la musique lorsqu'un clic est effectué sur la vidéo
+        video.addEventListener('click', function() {
+            // Vérifie si la musique est en pause
+            if (music.paused) {
+                // Si oui, lance la lecture de la musique
+                music.play();
+            } else {
+                // Si non, met la musique en pause
+                music.pause();
             }
         });
+
+        // Votre code de compte à rebours ici
     });
 </script>
 

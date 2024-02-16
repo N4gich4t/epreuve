@@ -7,7 +7,7 @@ function redirectToAnotherPage() {
 var endDate = new Date('2024-02-18T12:00:00').getTime(); // Date de fin du compte à rebours
 
 // Mise à jour du compte à rebours chaque seconde
-var countdown = setInterval(function() {
+var countdown = setInterval(function () {
     var now = new Date().getTime();
     var distance = endDate - now;
 
@@ -32,7 +32,7 @@ var countdown = setInterval(function() {
 }, 1000);
 
 // Gestion de l'événement de clic sur le bouton
-document.getElementById("bottle").addEventListener("click", function() {
+document.getElementById("bottle").addEventListener("click", function () {
     redirectToAnotherPage();
 
 });
