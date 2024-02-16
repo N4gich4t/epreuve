@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var music = document.getElementById('background-music');
+    var video = document.getElementById('background-video');
+
+    // Déclenche la lecture de la musique dès que la page est chargée
+    music.play();
+
+    // Ajoute un écouteur d'événement pour déclencher la lecture de la musique lorsqu'un clic est effectué sur la vidéo
+    video.addEventListener('click', function() {
+        // Vérifie si la musique est en pause
+        if (music.paused) {
+            // Si oui, lance la lecture de la musique
+            music.play();
+        } else {
+            // Si non, met la musique en pause
+            music.pause();
+        }
+    });
+// Votre code de compte à rebours ici
 // Fonction de redirection vers la page spécifiée
 function redirectToAnotherPage() {
     window.location.href = 'https://sites.google.com/view/votre-aventure-commence/epreuve'; // Remplacez cet URL par celui de votre choix
@@ -35,4 +54,5 @@ var countdown = setInterval(function () {
 document.getElementById("bottle").addEventListener("click", function () {
     redirectToAnotherPage();
 
+    });
 });

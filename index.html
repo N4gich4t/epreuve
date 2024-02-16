@@ -17,34 +17,9 @@
     <source src="img/portail.mp4" type="video/mp4">
 </video>
 
-
 <audio id="background-music">
     <source src="audio/music_fond.mp3" type="audio/mp3">
 </audio>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var music = document.getElementById('background-music');
-        var video = document.getElementById('background-video');
-
-        // Déclenche la lecture de la musique dès que la page est chargée
-        music.play();
-
-        // Ajoute un écouteur d'événement pour déclencher la lecture de la musique lorsqu'un clic est effectué sur la vidéo
-        video.addEventListener('click', function() {
-            // Vérifie si la musique est en pause
-            if (music.paused) {
-                // Si oui, lance la lecture de la musique
-                music.play();
-            } else {
-                // Si non, met la musique en pause
-                music.pause();
-            }
-        });
-
-        // Votre code de compte à rebours ici
-    });
-</script>
 
 <div id="countdown" class="countdown-container">
     <div class="countdown-item">
