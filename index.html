@@ -13,11 +13,30 @@
     <h1 class="test">L'Epreuve Commencera dans : </h1>
 </header>
 
-<audio id="background-music" src="audio/music_fond.mp3"></audio>
 <video id="background-video" autoplay loop muted>
     <source src="img/portail.mp4" type="video/mp4">
 </video>
 
+<button id="start-audio">Démarrer la musique</button>
+
+<audio id="background-music">
+    <source src="audio/music_fond.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('background-music');
+        var button = document.getElementById('start-audio');
+
+        // Ajout d'un écouteur d'événement sur le bouton pour démarrer l'audio
+        button.addEventListener('click', function() {
+            // Vérifiez d'abord si la musique n'est pas déjà en train de jouer
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    });
+</script>
 
 <div id="countdown" class="countdown-container">
     <div class="countdown-item">
