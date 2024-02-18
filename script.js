@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Votre code de compte à rebours ici
 // Fonction de redirection vers la page spécifiée
 function redirectToAnotherPage() {
-    window.location.href = 'https://sites.google.com/view/votre-aventure-commence/epreuve'; // Remplacez cet URL par celui de votre choix
+    window.location.href = 'https://www.figma.com/proto/UfVf6Mf5pSMkmXONkD1ANF/Untitled?page-id=0%3A1&type=design&node-id=1-3&viewport=349%2C428%2C0.14&t=SP72x1ETRd8p4OcO-1&scaling=min-zoom&mode=design'; // Remplacez cet URL par celui de votre choix
 }
 
 // Date de fin du compte à rebours
