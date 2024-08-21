@@ -23,7 +23,7 @@ function redirectToAnotherPage() {
 }
 
 // Date de fin du compte à rebours
-var endDate = new Date('2024-07-05T16:00:00').getTime(); // Date de fin du compte à rebours
+var endDate = new Date('2025-07-05T16:00:00').getTime(); // Date de fin du compte à rebours
 
 // Mise à jour du compte à rebours chaque seconde
 var countdown = setInterval(function () {
